@@ -11,7 +11,6 @@ name,passwd = cred.split("\n")
 recv_list = recv.split("\n")
 subject = "Subject"
 driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()))
-to = "jdevansh21@iitk.ac.in"
 driver.get("https://nwm.iitk.ac.in/")
 driver.find_element(by = By.ID , value="rcmloginuser").send_keys(name)
 sleep(1)
