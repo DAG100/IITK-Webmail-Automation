@@ -1,2 +1,2 @@
-dummy22
-dummypasswd
+--
+--

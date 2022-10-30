@@ -7,7 +7,9 @@ with  open("cred.txt","r") as f:
     cred = f.read()
 with  open("recv.txt","r") as f:
     recv = f.read()
-name,passwd = cred.split("\n")
+credarr = cred.split("\n")
+name = credarr[0];
+passwd = credarr[1];
 recv_list = recv.split("\n")
 subject = "Subject"
 driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()))
